@@ -754,10 +754,42 @@
                 <div class="tool-card animated delay-1">
                     <div class="tool-icon image-tool">
                         <i class="fas fa-compress-alt"></i>
-                    </div>
-                    <h3>Compress Images</h3>
-                    <p>Reduce file size without quality loss</p>
-                </div>
+                    <style>
+    .link-clean {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+    }
+
+    .link-clean::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #2b7cff; /* Hover underline color */
+        transition: width 0.3s ease;
+    }
+
+    .link-clean:hover {
+        color: #2b7cff; /* Hover text color */
+    }
+
+    .link-clean:hover::after {
+        width: 100%;
+    }
+</style>
+
+<div>
+    <h3>
+        <a href="/img-compress.html" target="_blank" class="link-clean">
+            Compress Images
+        </a>
+    </h3>
+    <p>Reduce file size without quality loss</p>
+</div>
+
                 <div class="tool-card animated delay-2">
                     <div class="tool-icon pdf-tool">
                         <i class="fas fa-file-contract"></i>
